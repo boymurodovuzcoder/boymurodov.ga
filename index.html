@@ -9,7 +9,11 @@
     <meta name="keywords" content="Samandar, Boymurodov, developer, resume, cv, personal, portfolio, personal resume, clean, modern, shaxsiy, dasturchi , veb, veb dizayn">
     <meta name="author" content="MouriTheme">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <style type="text/css" media="screen">
+    	.addBlue {
+    		color: #00B0DC !important;
+    	}
+    </style>
     <!--Template name-->
     <title>Boymurodov Samandar</title>
 
@@ -188,16 +192,16 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <ul class="about-list">
-                                <li> <span class="title">Ism, Familya</span> <span class="value">Boymurodov Samandar</span> </li>
-                                <li> <span class="title">Yosh</span> <span class="value">16</span> </li>
-                                <li> <span class="title">Email</span> <span class="value">boymurodovuzcoder@gmail.com</span> </li>
+                                <li> <span class="title addBlue">Ism, Familya</span> <span class="value">Boymurodov Samandar</span> </li>
+                                <li> <span class="title addBlue">Yosh</span> <span class="value">16</span> </li>
+                                <li> <span class="title addBlue">Email</span> <span class="value">boymurodovuzcoder@gmail.com</span> </li>
                             </ul>
                         </div>
                         <div class="col-sm-6">
                             <ul class="about-list">
-                                <li> <span class="title">Tel</span> <span class="value">+99897 888 15 10</span> </li>
-                                <li> <span class="title">Manzil</span> <span class="value">Nurafshon shahar, Yuksalish MIF</span> </li>
-                                <li> <span class="title">Hobbi</span> <span class="value">Shaxmat , kitob o'qish</span> </li>
+                                <li> <span class="title addBlue">Tel</span> <span class="value">+99897 888 15 10</span> </li>
+                                <li> <span class="title addBlue">Manzil</span> <span class="value">Nurafshon shahar, Yuksalish MIF</span> </li>
+                                <li> <span class="title addBlue">Hobbi</span> <span class="value">Shaxmat , kitob o'qish</span> </li>
                             </ul>
                         </div>
                     </div>
@@ -319,7 +323,7 @@
     <div class="container">
         <div class="row">
             <div class="section-title">
-                <h2><span>Texnologiyalar</span></h2>
+                <h2><span>Web Texnologiyalar</span></h2>
             </div>
         </div>
         <div class="row">
@@ -366,14 +370,13 @@
 
                                 </div>
 
-
                                 <div class="col-md-12">
 
                                     <!-- skillbar -->
-                                    <div class="skillbar" data-percent="95%"> <!--edit percentage-->
+                                    <div class="skillbar" data-percent="55%"> <!--edit percentage-->
 
-                                        <h6 class="skillbar-title">Python</h6> <!--edit skills-->
-                                        <h6 class="skillbar-percent">95%</h6> <!--edit percentage-->
+                                        <h6 class="skillbar-title">Yii2</h6> <!--edit skills-->
+                                        <h6 class="skillbar-percent">55%</h6> <!--edit percentage-->
 
                                         <div class="skillbar-bar">
                                             <div class="skillbar-child"></div>
@@ -438,8 +441,12 @@
                                     <!-- end skillbar -->
 
                                 </div>
-                            </div>
 
+
+								
+
+                            </div>
+                            
                         </div>
 
                     </div>
@@ -450,7 +457,10 @@
     </div>
 </div>
 
+
+
 <!--Skills area ends-->
+
 
 <!--Contact Area Starts-->
 
@@ -581,76 +591,8 @@
 
 <!--Main js-->
 <script src="js/main.js"></script>
-
+<script src="js/validateUltimate.js"></script>
 </body>
 
-<script>
-        
-        function validateForm1() {
-            var name = $("#name");
-            var tel = $("#tel");
-            var message = $("#message");
-
-            var nameValidation = false;
-            var telValidation = false;
-            var messageValidation = false;
-
-            var checkName = /^[\w]([-']?[\w]+)*( [\w]([-']?[\w]+)*)$/;
-            var checkTel = /^\+?[\d]{9,13}$/;
-            
-            if (!name.val()) {
-                $(".name_error").css("display", "block")
-                $(".name_error").css("color", "red");
-                $(".name_error").html("Ism va Familya kiritilmadi!");
-                nameValidation = false;
-            } else {
-                 $(".name_error").css("display", "none");
-                 if (checkName.test(name.val())) {
-                    nameValidation = true;
-                    $(".name_error").css("display", "none")
-                } else {
-                    $(".name_error").css("display", "block")
-                    $(".name_error").css("color", "red");
-                    $(".name_error").html("Ism va Familya noto'gri kiritildi!");   
-                    nameValidation = false;
-                }
-            }
-
-            if (!tel.val()) {
-                $(".tel_error").css("display", "block")
-                $(".tel_error").css("color", "red");
-                $(".tel_error").html("Telefon raqam kiritilmadi!");
-                telValidation = false;
-            } else {
-                 $(".tel_error").css("display", "none");
-                  if (checkTel.test(tel.val())) {
-                    telValidation = true;
-                    $(".tel_error").css("display", "none")
-                } else {
-                    $(".tel_error").css("display", "block")
-                    $(".tel_error").css("color", "red");
-                    $(".tel_error").html("Telefon raqam noto'gri kiritildi!");   
-                    telValidation = false;
-                }
-            }
-
-            if (!message.val()) {
-                $(".message_error").css("display", "block")
-                $(".message_error").css("color", "red");
-                $(".message_error").html("Xabar kiritilmadi!");
-                messageValidation = false;
-            } else {
-                 $(".message_error").css("display", "none")
-                 messageValidation = true;
-            }
-
-            if (nameValidation && telValidation && messageValidation) {
-                console.log('submitted');
-                
-                $("#contact-form").submit();
-            } 
-
-        }
-    </script>
 
 </html>

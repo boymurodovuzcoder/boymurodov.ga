@@ -361,7 +361,7 @@
                 <h5>Send Me A Message</h5>
 
                 <!-- form -->
-                <form name="contactForm" id="contactForm" method="post" data-netlify="true" netlify>
+                <form name="contactForm" id="contactForm" action="POST" data-netlify="true">
 
                     <div class="form-field">
                         <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
@@ -383,7 +383,9 @@
                     <div class="form-field">
                         <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
                     </div>
-
+                    <div class="form-field">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
                     <div class="form-field">
                         <button class="submitform">Submit</button>
 

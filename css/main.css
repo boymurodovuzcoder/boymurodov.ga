@@ -3072,6 +3072,7 @@ footer h4.h05::after {
 #map {
     width: 40rem;
     height: 25rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 }

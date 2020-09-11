@@ -297,37 +297,37 @@
     };
 
 
-    /* Contact Form
-     * ------------------------------------------------------ */
-    var ssContactForm = function() {
+    // /* Contact Form
+    //  * ------------------------------------------------------ */
+    // var ssContactForm = function() {
 
-        /* local validation */
-        $('#contactForm').validate({
+    //     /* local validation */
+    //     $('#contactForm').validate({
 
-            /* submit via ajax */
-            submitHandler: function(form) {
-                var sLoader = $('#submit-loader');
-                sLoader.fadeIn();
+    //         /* submit via ajax */
+    //         submitHandler: function(form) {
+    //             var sLoader = $('#submit-loader');
+    //             sLoader.fadeIn();
 
-                function delay(delayInms) {
-                    return new Promise(resolve => {
-                        setTimeout(() => {
-                            resolve(2);
-                        }, delayInms);
-                    });
-                }
+    //             function delay(delayInms) {
+    //                 return new Promise(resolve => {
+    //                     setTimeout(() => {
+    //                         resolve(2);
+    //                     }, delayInms);
+    //                 });
+    //             }
 
-                async function sample() {
-                    let delayres = await delay(1500);
-                    sLoader.fadeOut();
-                    $('#message-warning').hide();
-                    $('#contactForm').fadeOut();
-                    $('#message-success').fadeIn();
-                }
-                sample();
-            }
-        });
-    };
+    //             async function sample() {
+    //                 let delayres = await delay(1500);
+    //                 sLoader.fadeOut();
+    //                 $('#message-warning').hide();
+    //                 $('#contactForm').fadeOut();
+    //                 $('#message-success').fadeIn();
+    //             }
+    //             sample();
+    //         }
+    //     });
+    // };
 
 
     /* Back to Top

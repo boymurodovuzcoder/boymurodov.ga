@@ -3069,6 +3069,13 @@ footer h4.h05::after {
     }
 }
 
+#map {
+    width: 40rem;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (max-width: 600px) {
     .footer-bottom {
         padding-bottom: .6rem;
@@ -3078,5 +3085,18 @@ footer h4.h05::after {
     }
     .footer-bottom .copyright span::after {
         display: none;
+    }
+    #map {
+        width: 33rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    #map {
+        width: 33rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

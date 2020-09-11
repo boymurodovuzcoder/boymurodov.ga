@@ -3088,6 +3088,7 @@ footer h4.h05::after {
     }
     #map {
         width: 33rem;
+        margin-top: 2rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -3096,6 +3097,7 @@ footer h4.h05::after {
 @media only screen and (max-width: 1025px) {
     #map {
         width: 33rem;
+        margin-top: 2rem;
         margin-left: auto;
         margin-right: auto;
     }

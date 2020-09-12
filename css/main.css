@@ -1589,13 +1589,13 @@ header .header-logo a {
 }
 
 #menu-nav-wrap .nav-list li a {
-    color: rgba(255, 255, 255, 0.25);
+    color: white;
     display: block;
 }
 
 #menu-nav-wrap .nav-list li a:hover,
 #menu-nav-wrap .nav-list li a:focus {
-    color: white;
+    color: rgba(255, 255, 255, 0.25);
 }
 
 #menu-nav-wrap .header-social-list {
@@ -1612,12 +1612,12 @@ header .header-logo a {
 }
 
 #menu-nav-wrap .header-social-list li a {
-    color: rgba(255, 255, 255, 0.15);
+    color: white;
 }
 
 #menu-nav-wrap .header-social-list li a:hover,
 #menu-nav-wrap .header-social-list li a:focus {
-    color: white;
+    color: rgba(255, 255, 255, 0.15);
 }
 
 #menu-nav-wrap .header-social-list li:last-child {

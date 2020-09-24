@@ -2334,7 +2334,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #portfolio .bricks-wrapper .brick {
     float: left;
-    width: 33%;
+    width: 25%;
     padding: 0;
     margin: 0;
 }

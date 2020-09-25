@@ -1,2 +1,3 @@
-# boymurodov.ga
-kichik portfolio saytim. O'zim haqimda ma'lumot va kontakt bo'limi mavjud. 
+## boymurodov.ga
+This is my portfolio website where I give info about myself.
+Link: [www.boymurodov.ga](https://boymurodov.ga)
